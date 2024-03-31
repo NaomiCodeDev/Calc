@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор НДС</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Калькулятор НДС</h2>
+    <label for="amount">Сумма С Учетом НДС:</label>
+    <input type="number" id="amount">
+    <div id="vat" class="checkboxes">
+      <input type="checkbox" id="vat23" value="23">
+      <label for="vat23">23%</label>
+      <input type="checkbox" id="vat8" value="8">
+      <label for="vat8">8%</label>
+      <input type="checkbox" id="vat5" value="5">
+      <label for="vat5">5%</label>
+    </div>
+    <div id="result">
+      <label for="vatAmount">Сумма НДС:</label>
+      <input type="text" id="vatAmount" readonly>
+      <label for="exclAmount">Сумма Без НДС:</label>
+      <input type="text" id="exclAmount" readonly>
+    </div>
+    <button id="convertBtn">Конвертировать</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

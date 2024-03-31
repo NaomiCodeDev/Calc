@@ -1,0 +1,102 @@
+body {
+    font-family: Comfortaa;
+    background-color: #222; /* Dark background */
+    color: #fff; /* Light text */
+    zoom: 150%; /* Установка масштаба страницы */
+}
+
+.container {
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+input[type="number"],
+input[type="text"] {
+    font-family: Comfortaa;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 6px;
+    text-align: center; /* Centered text */
+    background-color: #444; /* Darker input background */
+    color: #d1d1d1; /* Light text */
+    font-weight: bold;
+}
+
+label {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #bbb; /* Lighter label color */
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.checkboxes input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxes label {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #bbb; /* Lighter text */
+    border: 2px solid #ca2424; /* Darker border */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkboxes label:hover {
+    background-color: #ca2424; /* Darker hover color */
+    color: #fff;
+}
+
+.checkboxes input[type="checkbox"]:checked + label {
+    background-color: #CA2424; /* Red color for checked checkbox */
+    color: #fff; /* Light text */
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result label {
+    display: flex;
+    margin-bottom: 5px;
+    color: #bbb; /* Lighter label color */
+}
+
+#result input[type="text"] {
+    background-color: #444; /* Darker input background */
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #d1d1d1; /* Light text */
+    text-align: center; /* Centered text */
+}
+
+button {
+    font-family: Comfortaa;
+    background-color: #CA2424; /* Red button color */
+    color: #fff; /* Light text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 7px;
+}
+
+button:hover {
+    background-color: #FF5252; /* Lighter red on hover */
+}
